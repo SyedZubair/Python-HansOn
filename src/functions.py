@@ -1,6 +1,8 @@
 import requests as rq
 
 
+
+
 def sendRequest(url="https://fake-json-api.mock.beeceptor.com/users"):
     response = rq.get(url)
     return response
@@ -30,7 +32,7 @@ def processResponse(response):
 def sumNumbers(*arg):
     return sum(arg)
 
-print(sumNumbers(4,5,6,9,8))
+#print(sumNumbers(4,5,6,9,8))
 
 #*kwarg
 
@@ -40,4 +42,4 @@ def printResponse(**kvargs):
     for key, value in kvargs.items():
         print(f"{key}: {value}")
 
-printResponse(name="Bharath", age=25)
+#printResponse(name="Bharath", age=25)
